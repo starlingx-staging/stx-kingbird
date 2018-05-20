@@ -1,7 +1,10 @@
 # The order of packages is significant, because pip processes them in the order
 # of appearance. Changing the order has an impact on the overall integration
 # process, which may cause wedges in the gate later.
-pbr!=2.1.0,>=2.0.0 # Apache-2.0
+
+# We have an older pbr which seems to work...
+# pbr!=2.1.0,>=2.0.0 # Apache-2.0
+pbr >= 1.8 # Apache-2.0
 Babel!=2.4.0,>=2.3.4 # BSD
 
 Paste # MIT
@@ -42,3 +45,4 @@ python-neutronclient>=6.3.0 # Apache-2.0
 python-cinderclient>=2.1.0 # Apache-2.0
 python-novaclient>=7.1.0 # Apache-2.0
 python-keystoneclient>=3.8.0 # Apache-2.0
+requests_toolbelt

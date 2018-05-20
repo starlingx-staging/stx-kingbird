@@ -24,6 +24,7 @@ try:
 except ImportError:
     pass
 
+# Danger - pbr requirement >= 2.0.0 not satisfied...
 setuptools.setup(
-    setup_requires=['pbr>=2.0.0'],
+    setup_requires=['pbr>=1.8.0'],
     pbr=True)

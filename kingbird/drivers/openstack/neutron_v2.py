@@ -40,7 +40,7 @@ class NeutronClient(base.DriverBase):
             raise
 
     def get_resource_usages(self, project_id):
-        '''Calcualte resources usage and return the dict
+        '''Calculate resources usage and return the dict
 
         :param: project_id
         :return: resource usage dict
